@@ -1,0 +1,652 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:45604ca8-3530-464c-a38a-055aa941c6c1",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-10-21T10:58:44+00:00",
+    "tools": [
+      {
+        "vendor": "aquasecurity",
+        "name": "trivy",
+        "version": "0.46.0"
+      }
+    ],
+    "component": {
+      "bom-ref": "pkg:k8s/k8s.io%2Fkubernetes@1.21.1",
+      "type": "platform",
+      "name": "k8s.io/kubernetes",
+      "version": "1.21.1",
+      "purl": "pkg:k8s/k8s.io%2Fkubernetes@1.21.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "kind-kind"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "cluster"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "0b5dd7e4-791f-49dd-9160-f4d27c6949b6",
+      "type": "operating-system",
+      "name": "ubuntu",
+      "version": "21.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "os-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "ubuntu"
+        }
+      ]
+    },
+    {
+      "bom-ref": "359c91f2-3f4b-456a-bdc2-28f5e63f76ab",
+      "type": "operating-system",
+      "name": "ubuntu",
+      "version": "21.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "os-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "ubuntu"
+        }
+      ]
+    },
+    {
+      "bom-ref": "46ff4772-16f9-4032-ba0a-4647249c8fa2",
+      "type": "application",
+      "name": "node-core-components",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "golang"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7f44cde8-3e3d-40c6-8510-491a358c69fa",
+      "type": "platform",
+      "name": "kind-worker2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Architecture",
+          "value": "arm64"
+        },
+        {
+          "name": "aquasecurity:trivy:HostName",
+          "value": "kind-worker2"
+        },
+        {
+          "name": "aquasecurity:trivy:KernelVersion",
+          "value": "6.5.6-200.fc38.aarch64"
+        },
+        {
+          "name": "aquasecurity:trivy:NodeRole",
+          "value": "worker"
+        },
+        {
+          "name": "aquasecurity:trivy:OperatingSystem",
+          "value": "linux"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "kind-worker2"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "node"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ced65c36-381d-4b85-8508-f42bb08bc4c6",
+      "type": "application",
+      "name": "node-core-components",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "golang"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e1f77168-c646-4f09-bb3d-f134dcc8c033",
+      "type": "application",
+      "name": "node-core-components",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "golang"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e2265bba-9311-4b6e-a901-0a8529f70421",
+      "type": "operating-system",
+      "name": "ubuntu",
+      "version": "21.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "os-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "ubuntu"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f6f86581-bb34-466d-805e-fc1f8600f2cf",
+      "type": "platform",
+      "name": "kind-control-plane",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Architecture",
+          "value": "arm64"
+        },
+        {
+          "name": "aquasecurity:trivy:HostName",
+          "value": "kind-control-plane"
+        },
+        {
+          "name": "aquasecurity:trivy:KernelVersion",
+          "value": "6.5.6-200.fc38.aarch64"
+        },
+        {
+          "name": "aquasecurity:trivy:NodeRole",
+          "value": "master"
+        },
+        {
+          "name": "aquasecurity:trivy:OperatingSystem",
+          "value": "linux"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "kind-control-plane"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "node"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fbea4a8f-3ecc-4440-afea-5cb637e4800a",
+      "type": "platform",
+      "name": "kind-worker",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Architecture",
+          "value": "arm64"
+        },
+        {
+          "name": "aquasecurity:trivy:HostName",
+          "value": "kind-worker"
+        },
+        {
+          "name": "aquasecurity:trivy:KernelVersion",
+          "value": "6.5.6-200.fc38.aarch64"
+        },
+        {
+          "name": "aquasecurity:trivy:NodeRole",
+          "value": "worker"
+        },
+        {
+          "name": "aquasecurity:trivy:OperatingSystem",
+          "value": "linux"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "kind-worker"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "node"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com%2Fcontainerd%2Fcontainerd@1.5.2",
+      "type": "application",
+      "name": "github.com/containerd/containerd",
+      "version": "1.5.2",
+      "purl": "pkg:golang/github.com%2Fcontainerd%2Fcontainerd@1.5.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "github.com/containerd/containerd"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "node"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/go.etcd.io%2Fetcd%2Fv3@3.4.13-0",
+      "type": "application",
+      "name": "go.etcd.io/etcd/v3",
+      "version": "3.4.13-0",
+      "purl": "pkg:k8s/go.etcd.io%2Fetcd%2Fv3@3.4.13-0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "etcd-kind-control-plane"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "controlPlane"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/k8s.io%2Fapiserver@1.21.1",
+      "type": "application",
+      "name": "k8s.io/apiserver",
+      "version": "1.21.1",
+      "purl": "pkg:k8s/k8s.io%2Fapiserver@1.21.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "kube-apiserver-kind-control-plane"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "controlPlane"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/k8s.io%2Fcontroller-manager@1.21.1",
+      "type": "application",
+      "name": "k8s.io/controller-manager",
+      "version": "1.21.1",
+      "purl": "pkg:k8s/k8s.io%2Fcontroller-manager@1.21.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "kube-controller-manager-kind-control-plane"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "controlPlane"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/k8s.io%2Fkube-proxy@1.21.1",
+      "type": "application",
+      "name": "k8s.io/kube-proxy",
+      "version": "1.21.1",
+      "purl": "pkg:k8s/k8s.io%2Fkube-proxy@1.21.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "kube-proxy-csjtg"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "node"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/k8s.io%2Fkube-scheduler@1.21.1",
+      "type": "application",
+      "name": "k8s.io/kube-scheduler",
+      "version": "1.21.1",
+      "purl": "pkg:k8s/k8s.io%2Fkube-scheduler@1.21.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "kube-scheduler-kind-control-plane"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "controlPlane"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/k8s.io%2Fkubelet@1.21.1",
+      "type": "application",
+      "name": "k8s.io/kubelet",
+      "version": "1.21.1",
+      "purl": "pkg:k8s/k8s.io%2Fkubelet@1.21.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "k8s.io/kubelet"
+        },
+        {
+          "name": "aquasecurity:trivy:resource:Type",
+          "value": "node"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/kindnet@20210326-1e038dc5",
+      "type": "application",
+      "name": "kindnet",
+      "version": "20210326-1e038dc5",
+      "purl": "pkg:k8s/kindnet@20210326-1e038dc5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "kindnet-2887m"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:k8s/kube-dns",
+      "type": "application",
+      "name": "kube-dns",
+      "purl": "pkg:k8s/kube-dns",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:resource:Name",
+          "value": "coredns-558bd4d5db-cxvwr"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/coredns@sha256%3A1a1f05a2cd7c2fbfa7b45b21128c8a4880c003ca482460081dc12d76bfa863e8?repository_url=k8s.gcr.io%2Fcoredns%2Fcoredns",
+      "type": "container",
+      "name": "k8s.gcr.io/coredns/coredns",
+      "version": "sha256:1a1f05a2cd7c2fbfa7b45b21128c8a4880c003ca482460081dc12d76bfa863e8",
+      "purl": "pkg:oci/coredns@sha256%3A1a1f05a2cd7c2fbfa7b45b21128c8a4880c003ca482460081dc12d76bfa863e8?repository_url=k8s.gcr.io%2Fcoredns%2Fcoredns",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "k8s.gcr.io/coredns/coredns:1.8.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/etcd@sha256%3A05b738aa1bc6355db8a2ee8639f3631b908286e43f584a3d2ee0c472de033c28?repository_url=k8s.gcr.io%2Fetcd",
+      "type": "container",
+      "name": "k8s.gcr.io/etcd",
+      "version": "sha256:05b738aa1bc6355db8a2ee8639f3631b908286e43f584a3d2ee0c472de033c28",
+      "purl": "pkg:oci/etcd@sha256%3A05b738aa1bc6355db8a2ee8639f3631b908286e43f584a3d2ee0c472de033c28?repository_url=k8s.gcr.io%2Fetcd",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "k8s.gcr.io/etcd:3.4.13-0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/kindnetd@sha256%3Af37b7c809e5dcc2090371f933f7acb726bb1bffd5652980d2e1d7e2eff5cd301?repository_url=index.docker.io%2Fkindest%2Fkindnetd",
+      "type": "container",
+      "name": "index.docker.io/kindest/kindnetd",
+      "version": "sha256:f37b7c809e5dcc2090371f933f7acb726bb1bffd5652980d2e1d7e2eff5cd301",
+      "purl": "pkg:oci/kindnetd@sha256%3Af37b7c809e5dcc2090371f933f7acb726bb1bffd5652980d2e1d7e2eff5cd301?repository_url=index.docker.io%2Fkindest%2Fkindnetd",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "index.docker.io/kindest/kindnetd:20210326-1e038dc5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/kube-apiserver@sha256%3A18e61c783b41758dd391ab901366ec3546b26fae00eef7e223d1f94da808e02f?repository_url=k8s.gcr.io%2Fkube-apiserver",
+      "type": "container",
+      "name": "k8s.gcr.io/kube-apiserver",
+      "version": "sha256:18e61c783b41758dd391ab901366ec3546b26fae00eef7e223d1f94da808e02f",
+      "purl": "pkg:oci/kube-apiserver@sha256%3A18e61c783b41758dd391ab901366ec3546b26fae00eef7e223d1f94da808e02f?repository_url=k8s.gcr.io%2Fkube-apiserver",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "k8s.gcr.io/kube-apiserver:1.21.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/kube-controller-manager@sha256%3A0c6dccae49de8003ee4fa06db04a9f13bb46cbaad03977e6baa21174f2dba2fc?repository_url=k8s.gcr.io%2Fkube-controller-manager",
+      "type": "container",
+      "name": "k8s.gcr.io/kube-controller-manager",
+      "version": "sha256:0c6dccae49de8003ee4fa06db04a9f13bb46cbaad03977e6baa21174f2dba2fc",
+      "purl": "pkg:oci/kube-controller-manager@sha256%3A0c6dccae49de8003ee4fa06db04a9f13bb46cbaad03977e6baa21174f2dba2fc?repository_url=k8s.gcr.io%2Fkube-controller-manager",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "k8s.gcr.io/kube-controller-manager:1.21.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/kube-proxy@sha256%3A4bbef4ca108cdc3b99fe23d487fa4fca933a62c4fc720626a3706df9cef63b21?repository_url=k8s.gcr.io%2Fkube-proxy",
+      "type": "container",
+      "name": "k8s.gcr.io/kube-proxy",
+      "version": "sha256:4bbef4ca108cdc3b99fe23d487fa4fca933a62c4fc720626a3706df9cef63b21",
+      "purl": "pkg:oci/kube-proxy@sha256%3A4bbef4ca108cdc3b99fe23d487fa4fca933a62c4fc720626a3706df9cef63b21?repository_url=k8s.gcr.io%2Fkube-proxy",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "k8s.gcr.io/kube-proxy:1.21.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:oci/kube-scheduler@sha256%3A8c783dd2520887cc8e7908489ffc9f356c82436ba0411d554237a0b9632c9b87?repository_url=k8s.gcr.io%2Fkube-scheduler",
+      "type": "container",
+      "name": "k8s.gcr.io/kube-scheduler",
+      "version": "sha256:8c783dd2520887cc8e7908489ffc9f356c82436ba0411d554237a0b9632c9b87",
+      "purl": "pkg:oci/kube-scheduler@sha256%3A8c783dd2520887cc8e7908489ffc9f356c82436ba0411d554237a0b9632c9b87?repository_url=k8s.gcr.io%2Fkube-scheduler",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "k8s.gcr.io/kube-scheduler:1.21.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "oci"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "0b5dd7e4-791f-49dd-9160-f4d27c6949b6",
+      "dependsOn": []
+    },
+    {
+      "ref": "359c91f2-3f4b-456a-bdc2-28f5e63f76ab",
+      "dependsOn": []
+    },
+    {
+      "ref": "46ff4772-16f9-4032-ba0a-4647249c8fa2",
+      "dependsOn": [
+        "pkg:golang/github.com%2Fcontainerd%2Fcontainerd@1.5.2",
+        "pkg:k8s/k8s.io%2Fkubelet@1.21.1"
+      ]
+    },
+    {
+      "ref": "7f44cde8-3e3d-40c6-8510-491a358c69fa",
+      "dependsOn": [
+        "e1f77168-c646-4f09-bb3d-f134dcc8c033",
+        "e2265bba-9311-4b6e-a901-0a8529f70421"
+      ]
+    },
+    {
+      "ref": "ced65c36-381d-4b85-8508-f42bb08bc4c6",
+      "dependsOn": [
+        "pkg:golang/github.com%2Fcontainerd%2Fcontainerd@1.5.2",
+        "pkg:k8s/k8s.io%2Fkubelet@1.21.1"
+      ]
+    },
+    {
+      "ref": "e1f77168-c646-4f09-bb3d-f134dcc8c033",
+      "dependsOn": [
+        "pkg:golang/github.com%2Fcontainerd%2Fcontainerd@1.5.2",
+        "pkg:k8s/k8s.io%2Fkubelet@1.21.1"
+      ]
+    },
+    {
+      "ref": "e2265bba-9311-4b6e-a901-0a8529f70421",
+      "dependsOn": []
+    },
+    {
+      "ref": "f6f86581-bb34-466d-805e-fc1f8600f2cf",
+      "dependsOn": [
+        "0b5dd7e4-791f-49dd-9160-f4d27c6949b6",
+        "46ff4772-16f9-4032-ba0a-4647249c8fa2"
+      ]
+    },
+    {
+      "ref": "fbea4a8f-3ecc-4440-afea-5cb637e4800a",
+      "dependsOn": [
+        "359c91f2-3f4b-456a-bdc2-28f5e63f76ab",
+        "ced65c36-381d-4b85-8508-f42bb08bc4c6"
+      ]
+    },
+    {
+      "ref": "pkg:golang/github.com%2Fcontainerd%2Fcontainerd@1.5.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:k8s/go.etcd.io%2Fetcd%2Fv3@3.4.13-0",
+      "dependsOn": [
+        "pkg:oci/etcd@sha256%3A05b738aa1bc6355db8a2ee8639f3631b908286e43f584a3d2ee0c472de033c28?repository_url=k8s.gcr.io%2Fetcd"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/k8s.io%2Fapiserver@1.21.1",
+      "dependsOn": [
+        "pkg:oci/kube-apiserver@sha256%3A18e61c783b41758dd391ab901366ec3546b26fae00eef7e223d1f94da808e02f?repository_url=k8s.gcr.io%2Fkube-apiserver"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/k8s.io%2Fcontroller-manager@1.21.1",
+      "dependsOn": [
+        "pkg:oci/kube-controller-manager@sha256%3A0c6dccae49de8003ee4fa06db04a9f13bb46cbaad03977e6baa21174f2dba2fc?repository_url=k8s.gcr.io%2Fkube-controller-manager"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/k8s.io%2Fkube-proxy@1.21.1",
+      "dependsOn": [
+        "pkg:oci/kube-proxy@sha256%3A4bbef4ca108cdc3b99fe23d487fa4fca933a62c4fc720626a3706df9cef63b21?repository_url=k8s.gcr.io%2Fkube-proxy"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/k8s.io%2Fkube-scheduler@1.21.1",
+      "dependsOn": [
+        "pkg:oci/kube-scheduler@sha256%3A8c783dd2520887cc8e7908489ffc9f356c82436ba0411d554237a0b9632c9b87?repository_url=k8s.gcr.io%2Fkube-scheduler"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/k8s.io%2Fkubelet@1.21.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:k8s/k8s.io%2Fkubernetes@1.21.1",
+      "dependsOn": [
+        "7f44cde8-3e3d-40c6-8510-491a358c69fa",
+        "f6f86581-bb34-466d-805e-fc1f8600f2cf",
+        "fbea4a8f-3ecc-4440-afea-5cb637e4800a",
+        "pkg:k8s/go.etcd.io%2Fetcd%2Fv3@3.4.13-0",
+        "pkg:k8s/k8s.io%2Fapiserver@1.21.1",
+        "pkg:k8s/k8s.io%2Fcontroller-manager@1.21.1",
+        "pkg:k8s/k8s.io%2Fkube-proxy@1.21.1",
+        "pkg:k8s/k8s.io%2Fkube-proxy@1.21.1",
+        "pkg:k8s/k8s.io%2Fkube-proxy@1.21.1",
+        "pkg:k8s/k8s.io%2Fkube-scheduler@1.21.1",
+        "pkg:k8s/kindnet@20210326-1e038dc5",
+        "pkg:k8s/kindnet@20210326-1e038dc5",
+        "pkg:k8s/kindnet@20210326-1e038dc5",
+        "pkg:k8s/kube-dns",
+        "pkg:k8s/kube-dns"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/kindnet@20210326-1e038dc5",
+      "dependsOn": [
+        "pkg:oci/kindnetd@sha256%3Af37b7c809e5dcc2090371f933f7acb726bb1bffd5652980d2e1d7e2eff5cd301?repository_url=index.docker.io%2Fkindest%2Fkindnetd"
+      ]
+    },
+    {
+      "ref": "pkg:k8s/kube-dns",
+      "dependsOn": [
+        "pkg:oci/coredns@sha256%3A1a1f05a2cd7c2fbfa7b45b21128c8a4880c003ca482460081dc12d76bfa863e8?repository_url=k8s.gcr.io%2Fcoredns%2Fcoredns"
+      ]
+    },
+    {
+      "ref": "pkg:oci/coredns@sha256%3A1a1f05a2cd7c2fbfa7b45b21128c8a4880c003ca482460081dc12d76bfa863e8?repository_url=k8s.gcr.io%2Fcoredns%2Fcoredns",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:oci/etcd@sha256%3A05b738aa1bc6355db8a2ee8639f3631b908286e43f584a3d2ee0c472de033c28?repository_url=k8s.gcr.io%2Fetcd",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:oci/kindnetd@sha256%3Af37b7c809e5dcc2090371f933f7acb726bb1bffd5652980d2e1d7e2eff5cd301?repository_url=index.docker.io%2Fkindest%2Fkindnetd",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:oci/kube-apiserver@sha256%3A18e61c783b41758dd391ab901366ec3546b26fae00eef7e223d1f94da808e02f?repository_url=k8s.gcr.io%2Fkube-apiserver",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:oci/kube-controller-manager@sha256%3A0c6dccae49de8003ee4fa06db04a9f13bb46cbaad03977e6baa21174f2dba2fc?repository_url=k8s.gcr.io%2Fkube-controller-manager",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:oci/kube-proxy@sha256%3A4bbef4ca108cdc3b99fe23d487fa4fca933a62c4fc720626a3706df9cef63b21?repository_url=k8s.gcr.io%2Fkube-proxy",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:oci/kube-scheduler@sha256%3A8c783dd2520887cc8e7908489ffc9f356c82436ba0411d554237a0b9632c9b87?repository_url=k8s.gcr.io%2Fkube-scheduler",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": []
+}

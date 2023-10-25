@@ -1,0 +1,84 @@
+
+digraph cluster{
+  rankdir="LR";
+  label="k8s.io/kubernetes:1.21.1";
+  node[shape="box";style="filled,solid";color=mediumpurple;fillcolor=bisque];
+  subgraph masters {
+    cluster=true;
+    label="Masters";
+    style="solid";
+    subgraph "idddf71f33668084c3e16f742d913c32e56019a18a" {
+      cluster=true;
+      label="kind-control-plane";
+      style="filled,solid";
+      color=olive;
+      fillcolor=lightyellow;
+    idb916f37bdd483225ccded787786c7c70032aa81a[label="github.com/containerd/containerd:1.5.2"]
+  idd046796ea12a906096bf31f5cead044c415067fd[label="k8s.io/kubelet:1.21.1"]
+
+  idddf71f33668084c3e16f742d913c32e56019a18a_os[label="ubuntu:21.04"; style="filled,solid"; color="mediumpurple"; fillcolor="LightSteelBlue"; shape="hexagon"]
+  }
+
+  }
+  subgraph controlplane {
+    cluster=true;
+    label="Control Plane";
+    style="solid";
+    id18d0885cc2831a6a0dd9a5d3c94d4df1a19b8927[label="go.etcd.io/etcd/v3:3.4.13-0"]
+id04a323c71f9beac19549d91f4591ca508c2ef05c[label="k8s.gcr.io/etcd:sha256:05b738aa1bc6355db8a2ee8639f3631b908286e43f584a3d2ee0c472de033c28"]
+id18d0885cc2831a6a0dd9a5d3c94d4df1a19b8927 -> id04a323c71f9beac19549d91f4591ca508c2ef05c
+id4c66637d1b00417f7960723382d3c0a623bb2fcb[label="k8s.io/apiserver:1.21.1"]
+id40a65a1dc5cc37b9d4cca8572dbdc9fda241b6aa[label="k8s.gcr.io/kube-apiserver:sha256:18e61c783b41758dd391ab901366ec3546b26fae00eef7e223d1f94da808e02f"]
+id4c66637d1b00417f7960723382d3c0a623bb2fcb -> id40a65a1dc5cc37b9d4cca8572dbdc9fda241b6aa
+id271a7d732f97d0c785f244fa9b006e44a2f7aed6[label="k8s.io/controller-manager:1.21.1"]
+id21f1ca88c6eb1bfeea79c0c2971e93832c4c9002[label="k8s.gcr.io/kube-controller-manager:sha256:0c6dccae49de8003ee4fa06db04a9f13bb46cbaad03977e6baa21174f2dba2fc"]
+id271a7d732f97d0c785f244fa9b006e44a2f7aed6 -> id21f1ca88c6eb1bfeea79c0c2971e93832c4c9002
+id939674d328bb6b42af1151de0e49ad5bd8664b2f[label="k8s.io/kube-scheduler:1.21.1"]
+id3fc80322e55978ace960472cd49c10b013598c23[label="k8s.gcr.io/kube-scheduler:sha256:8c783dd2520887cc8e7908489ffc9f356c82436ba0411d554237a0b9632c9b87"]
+id939674d328bb6b42af1151de0e49ad5bd8664b2f -> id3fc80322e55978ace960472cd49c10b013598c23
+
+  }
+  subgraph nodes {
+    cluster=true;
+    label="Workers";
+    style="solid";
+    subgraph "idc7233498b754d73220f2f5a6849dae2adfa162c6" {
+      cluster=true;
+      label="kind-worker2";
+      style="filled,solid";
+      color=olive;
+      fillcolor=lightyellow;
+    idb916f37bdd483225ccded787786c7c70032aa81a[label="github.com/containerd/containerd:1.5.2"]
+  idd046796ea12a906096bf31f5cead044c415067fd[label="k8s.io/kubelet:1.21.1"]
+
+  idc7233498b754d73220f2f5a6849dae2adfa162c6_os[label="ubuntu:21.04"; style="filled,solid"; color="mediumpurple"; fillcolor="LightSteelBlue"; shape="hexagon"]
+  }
+subgraph "idf2f42ff027cd4ce037454dec6730c69c32dca541" {
+      cluster=true;
+      label="kind-worker";
+      style="filled,solid";
+      color=olive;
+      fillcolor=lightyellow;
+    idb916f37bdd483225ccded787786c7c70032aa81a[label="github.com/containerd/containerd:1.5.2"]
+  idd046796ea12a906096bf31f5cead044c415067fd[label="k8s.io/kubelet:1.21.1"]
+
+  idf2f42ff027cd4ce037454dec6730c69c32dca541_os[label="ubuntu:21.04"; style="filled,solid"; color="mediumpurple"; fillcolor="LightSteelBlue"; shape="hexagon"]
+  }
+
+  }
+  subgraph components {
+    cluster=true;
+    label="Componenets";
+    style="solid";
+    idd5558bc380a2a74c6b3b7e320ee00df1d4257e18[label="k8s.io/kube-proxy:1.21.1"]
+id02046fdceedddba10fdb3768bbcb34e51b087c0b[label="k8s.gcr.io/kube-proxy:sha256:4bbef4ca108cdc3b99fe23d487fa4fca933a62c4fc720626a3706df9cef63b21"]
+idd5558bc380a2a74c6b3b7e320ee00df1d4257e18 -> id02046fdceedddba10fdb3768bbcb34e51b087c0b
+ida99d020a7bd966a0916bb24eebcf1fb7bb1e0362[label="kindnet:20210326-1e038dc5"]
+id870da7e1792fe9df3354d1876dd4b7801f8b1af3[label="index.docker.io/kindest/kindnetd:sha256:f37b7c809e5dcc2090371f933f7acb726bb1bffd5652980d2e1d7e2eff5cd301"]
+ida99d020a7bd966a0916bb24eebcf1fb7bb1e0362 -> id870da7e1792fe9df3354d1876dd4b7801f8b1af3
+id00285c5d12352bc139ea6a4a32045329a9de08cc[label="kube-dns:undefined"]
+idf15a5882e4bc00c64c30cdf11ca934aeeadaae38[label="k8s.gcr.io/coredns/coredns:sha256:1a1f05a2cd7c2fbfa7b45b21128c8a4880c003ca482460081dc12d76bfa863e8"]
+id00285c5d12352bc139ea6a4a32045329a9de08cc -> idf15a5882e4bc00c64c30cdf11ca934aeeadaae38
+
+  }
+}
