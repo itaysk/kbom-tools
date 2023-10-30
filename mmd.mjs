@@ -34,8 +34,8 @@ function printNode(n) {
 }
 
 function printResource(r) {
-    let res = `${r.id}["${r.name}:${r.version}"]`;
-    res += r.resources.reduce((acc, v) => acc+`\n${v.id}["${v.name}:${v.version}"]\n${r.id} --> ${v.id}`, "");
+    let res = `${r.id}["\`**${r.name}**\n${r.version}\`"]`;
+    res += r.resources.reduce((acc, v) => acc+`\n${v.id}["\`**${v.name}**\n${v.version}\`"]\n${r.id} --> ${v.id}`, "");
     return res;
 }
 
