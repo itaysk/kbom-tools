@@ -52,3 +52,5 @@ You can also generate an SVG image:
 ```
 make my.skbom.mmd.svg IN=my.skbom.json
 ```
+
+![mermaid example](./test/test1.skbom.mmd.svg)
